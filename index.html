@@ -19,7 +19,7 @@
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1><strong>Hi, I'm <span id="name">Patrick Koziarski</span>.</strong><br/> I'm a software developer living and learning in Toronto, Ontario.</h1>
 					<p><br/>Engineering elegant, performant, and powerful software and web applications.</p>
-					<a href="#footer" class="button button-transition">Contact</a>
+					<a href="#three" class="button button-transition">Contact</a>
 				</div>
 			</header>
 
@@ -88,7 +88,8 @@
 						<p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="POST" data-netlify="true">
+								<form method="post" data-netlify="true" netlify-honeypot="bot-field">
+									<input name="bot-field" type="hidden">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
