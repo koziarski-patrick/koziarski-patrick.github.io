@@ -3323,3 +3323,6 @@ input, select, textarea {
 	animation: infinite;
 	transform: translateY(-5px);
 }
+.image-size {
+	height: 270px;;
+}
