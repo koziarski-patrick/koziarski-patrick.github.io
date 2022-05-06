@@ -25,6 +25,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	scroll-behavior: smooth;
+	--highlightColor: #49bf9d;
 }
 
 article, aside, details, figcaption, figure,
@@ -2137,6 +2138,7 @@ input, select, textarea {
 
 		.image.avatar {
 			border-radius: 100%;
+			outline: 4px solid #49bf9d;
 		}
 
 			.image.avatar:before {
@@ -2505,7 +2507,7 @@ input, select, textarea {
 		input[type="reset"].small,
 		input[type="button"].small,
 		.button.small {
-			font-size: 0.8em;
+			font-size: 0.575em;
 		}
 
 		input[type="submit"].large,
@@ -3278,11 +3280,11 @@ input, select, textarea {
 .title-headings--skills::before {
 	content: '';
 	border-bottom: 17px solid #49bf9d;
-    width: 4.2rem;
+    width: 11.6rem;
     display: block;
     margin: 0 auto;
 	position: relative;
-    left: 1rem;
+    left: 1.2rem;
     top: 2.5rem;
     z-index: -1;
 }
@@ -3324,5 +3326,26 @@ input, select, textarea {
 	transform: translateY(-5px);
 }
 .image-size {
-	height: 270px;;
+	height: 270px;
+}
+.field {
+	margin-bottom: 14px;
+}
+.learn-more {
+	color: #787878;
+	background:
+     linear-gradient(
+       to bottom,
+       var(--highlightColor) 0%,
+       var(--highlightColor) 100%
+     );
+	background-position: 0 100%;
+  	background-repeat: repeat-x;
+ 	background-size: 4px 4px;
+	border: 0px;
+  	transition: background-size .3s;
+}
+.learn-more:hover {
+	background-size: 4px 50px;
+	color: #ffffff !important;
 }
