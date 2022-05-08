@@ -2989,7 +2989,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 16pt;
 			}
 
 	}
@@ -3131,7 +3131,7 @@ input, select, textarea {
 			}
 
 			h2 {
-				font-size: 1.2em;
+				font-size: 1.5em;
 			}
 
 			h3 {
@@ -3145,7 +3145,7 @@ input, select, textarea {
 			}
 
 			header.major h2 {
-				font-size: 1.35em;
+				font-size: 2em;
 			}
 
 		/* List */
@@ -3224,7 +3224,7 @@ input, select, textarea {
 
 	}
 
-/* Skills */
+/* Revisions */
 #name {
 	color: #49bf9d;
 }
@@ -3329,7 +3329,7 @@ input, select, textarea {
 	height: 270px;
 }
 .field {
-	margin-bottom: 14px;
+	margin-bottom: 16px;
 }
 .learn-more {
 	color: #787878;
