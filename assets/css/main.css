@@ -2597,10 +2597,10 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-size: auto,								100% 150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -3348,4 +3348,12 @@ input, select, textarea {
 .learn-more:hover {
 	background-size: 4px 50px;
 	color: #ffffff !important;
+}
+.resume-btn {
+	font-size: 0.675em !important;
+	min-width: 7.2em;
+}
+.resume-btn:hover {
+	background-color: #4ab99a !important;
+	border-color: #4ab99a !important;
 }
