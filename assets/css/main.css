@@ -3401,3 +3401,6 @@ input, select, textarea {
 	background-color: #4ab99a !important;
 	border-color: #4ab99a !important;
 }
+#send-btn {
+	color: #b2b2b2 !important;
+}
