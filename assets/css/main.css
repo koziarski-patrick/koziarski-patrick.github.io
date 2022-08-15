@@ -2450,7 +2450,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: rgba(255, 255, 255, 0.6) !important; /* old color: #787878 */
+		color: #b2b2b2 ; /* old color: #787878 */
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -3400,7 +3400,4 @@ input, select, textarea {
 .resume-btn:hover {
 	background-color: #4ab99a !important;
 	border-color: #4ab99a !important;
-}
-#send-btn {
-	color: #b2b2b2 !important;
 }
