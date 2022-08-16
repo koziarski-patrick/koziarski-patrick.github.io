@@ -30,7 +30,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -2606,7 +2607,7 @@ input, select, textarea {
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: 35%;
 	}
@@ -3249,7 +3250,33 @@ input, select, textarea {
     background-position: 200% center;
   }
 }
-
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex {
+    display: flex;
+	
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.name-box {
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
 	display: inline-block;
@@ -3257,7 +3284,6 @@ input, select, textarea {
 	border-right: .15em solid orange; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .05em; /* Adjust as needed */
 	animation: 
 	  typing 3.5s steps(30, end),
 	  blink-caret .5s step-end infinite;
@@ -3394,10 +3420,47 @@ input, select, textarea {
 	color: #ffffff !important;
 }
 .resume-btn {
-	font-size: 0.675em !important;
-	min-width: 7.2em;
+	border-color: #49bf9d !important;
+	/* font-size: 0.675em !important;
+	min-width: 7.2em; */
 }
-.resume-btn:hover {
-	background-color: #4ab99a !important;
-	border-color: #4ab99a !important;
+.link-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+@media (min-width: 981px) { 
+	#header {
+		font-size: 16px !important;
+   }
+   #header p {
+		font-size: 15.6px !important;
+   }
+   	p {
+	font-size: .85em;
+   }
+}
+@media (min-width: 1220px) {
+	#header {
+		font-size: 17.5px !important;
+	} 
+	#header p {
+		font-size: 17px !important;
+   }
+}
+@media (min-width: 1441px) {
+	#header {
+		font-size: 19px !important;
+	} 
+	#header p {
+		font-size: 18px !important;
+   }
+}
+@media (min-width: 1681px) {
+	#header {
+		font-size: 21px !important;
+	} 
+	#header p {
+		font-size: 20px !important;
+   }
 }
