@@ -30,7 +30,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -2450,7 +2451,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #b2b2b2 ; /* old color: #787878 */
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2597,16 +2598,16 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-size: auto,								100% 150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: 35%;
 	}
@@ -2636,10 +2637,10 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.6);
 			font-size: 1.35em;
 			line-height: 1.75em;
-			margin: 0;
+			margin: 0 auto;
 		}
 
 		#header .image.avatar {
@@ -2658,7 +2659,7 @@ input, select, textarea {
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+		color: rgba(255, 255, 255, 0.6);
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
@@ -3225,8 +3226,49 @@ input, select, textarea {
 	}
 
 /* Revisions */
-#name {
-	color: #49bf9d;
+#namez {
+  background-image: linear-gradient(
+    -225deg,
+    #36be98 0%,
+    #31e0e0 29%,
+    #26cca2 67%,
+    #0fc4f1 100%
+  );
+  color: #49bf9d;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.typewriter h1 {
+	display: inline-block;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .5s step-end infinite;
+}
+  /* The typing effect */
+@keyframes typing {
+	from { max-width: 0 }
+	to { max-width: 100% }
+}
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange }
 }
 .h-20 {
 	height: 3rem;
@@ -3348,4 +3390,49 @@ input, select, textarea {
 .learn-more:hover {
 	background-size: 4px 50px;
 	color: #ffffff !important;
+}
+.resume-btn {
+	border-color: #49bf9d !important;
+	/* font-size: 0.675em !important;
+	min-width: 7.2em; */
+}
+.link-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+@media (min-width: 981px) { 
+	#header {
+		font-size: 16px !important;
+   }
+   #header p {
+		font-size: 15.6px !important;
+   }
+   	p {
+	font-size: .85em;
+   }
+}
+@media (min-width: 1220px) {
+	#header {
+		font-size: 17.5px !important;
+	} 
+	#header p {
+		font-size: 17px !important;
+   }
+}
+@media (min-width: 1441px) {
+	#header {
+		font-size: 19px !important;
+	} 
+	#header p {
+		font-size: 18px !important;
+   }
+}
+@media (min-width: 1681px) {
+	#header {
+		font-size: 21px !important;
+	} 
+	#header p {
+		font-size: 20px !important;
+   }
 }
